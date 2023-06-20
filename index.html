@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Instant Win Contest</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Instant Win Contest</h1>
+        <form action="contest.php" method="post" enctype="multipart/form-data">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="last_name">Cognome:</label>
+            <input type="text" id="last_name" name="lastname" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="photo">Foto scontrino:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <div id="result"></div>
+
+    <script src="./assets/js/contest.js"></script>
+</body>
+</html>
